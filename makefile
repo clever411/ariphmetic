@@ -30,18 +30,13 @@ rwcfg.o: rwcfg.cpp
 rwdata.o: rwdata.cpp
 	g++ $(cflags) rwdata.cpp
 
+re: clean all
 
-
-# stat
-stat: mainstat.cpp
-	g++ -std=c++1z -Wall -o stat mainstat.cpp
-
-
-
+rerun: clean run
 
 
 clean:
-	-rm *.o main stat
+	-rm *.o main
 
 
 
